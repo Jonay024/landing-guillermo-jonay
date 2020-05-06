@@ -1,0 +1,25 @@
+{
+  "name": "landing-guillermo-jonay",
+  "main": "src/index.html",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "npx parcel %npm_package_main% --no-cache",
+    "prebuildwindows": "del /f dist build",
+    "buildwindows": "npx parcel build %npm_package_main% -d build --public-url /%npm_package_name%/",
+    "postbuildwindows": "gh-pages -d build",
+    "prebuild": "rm -rf dist build",
+    "build": "npx parcel build %npm_package_main% -d build --public-url /%npm_package_name%/",
+    "postbuild": "gh-pages -d build"
+  },
+  "repository": "",
+  "author": "Jonay Barroso",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^9.7.6",
+    "gh-pages": "^2.2.0",
+    "parcel-bundler": "^1.12.4",
+    "postcss-cli": "^7.1.0",
+    "tailwindcss": "^1.2.0"
+  }
+}
