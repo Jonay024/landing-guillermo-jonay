@@ -3,11 +3,11 @@
 }
 
 .back-fixed {
-  background: url("../assets/pet-01.jpg") center center no-repeat;
+  background: url('../assets/pet-01.jpg') center center no-repeat;
   background-attachment: fixed;
 }
 .shape {
-  background-image: url("../assets/shape.svg");
+  background-image: url('../assets/shape.svg');
   background-size: 100% 100px;
   z-index: 10;
   transform: rotateY(180deg);
@@ -19,7 +19,7 @@
   bottom: 0;
 }
 .shape-2 {
-  background-image: url("../assets/shape-black.svg");
+  background-image: url('../assets/shape-black.svg');
   background-size: 100% 100px;
   z-index: 10;
   background-repeat: no-repeat;
@@ -35,7 +35,7 @@
       #ffffff 0%,
       rgba(255, 255, 255, 0) 100%
     ),
-    url("../assets/cat-gradiant.jpg");
+    url('../assets/cat-gradiant.jpg');
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -49,8 +49,20 @@
       #232220 25%,
       rgba(35, 34, 32, 0.13) 100%
     ),
-    url("../assets/pet-20.jpg");
+    url('../assets/pet-20.jpg');
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.text-vollkorn {
+  font-family: 'Vollkorn', serif;
+}
+
+.text-for-read {
+  font-family: 'Exo 2', sans-serif;
+}
+
+.text-robo {
+  font-family: 'Roboto', sans-serif;
 }

@@ -10,6 +10,10 @@
         a encontrar mascotas para adoptar y desaparecidas."
     />
     <link href="./assets/favicon.ico" rel="icon" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Exo+2:wght@600&family=Vollkorn:ital,wght@1,500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/my-styles.css" />
     <script
@@ -21,14 +25,26 @@
       function gtag() {
         dataLayer.push(arguments);
       }
-      gtag("js", new Date());
-      gtag("config", "UA-93062022-2");
+      gtag('js', new Date());
+      gtag('config', 'UA-93062022-2');
     </script>
 
     <script
       src="https://kit.fontawesome.com/8c377d1692.js"
       crossorigin="anonymous"
     ></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init('user_XNzyZWiCJBmdy69OznjMF');
+      })();
+    </script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
     <title>PawsVision</title>
   </head>
   <body class="font-serif">
@@ -40,7 +56,7 @@
           <div class="pl-4 flex items-center">
             <a
               class="no-underline hover:no-underline font-bold text-2xl lg:text-4xl text-gray-800"
-              href="#"
+              href="https://paws.vision/"
             >
               <i class="fas fa-paw"></i>
               <h1 class="inline">PawsVision</h1>
@@ -55,7 +71,7 @@
               height="20"
               viewBox="0 0 20 20"
             >
-              <title>menu</title>
+              <title>Menú</title>
               <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
             </svg>
           </label>
@@ -68,23 +84,23 @@
             <ul class="list-reset lg:flex justify-end flex-1 items-center">
               <li class="mr-3">
                 <a
-                  class="inline-block text-lg text-black font-bold hover:text-gray-800 border-b-2 border-transparent hover:border-base-orange py-2 px-4"
+                  class="text-robo inline-block text-lg text-black font-bold hover:text-gray-800 border-b-2 border-transparent hover:border-base-orange py-2 px-4"
                   href="#"
-                  >Blog</a
+                  >Refugios</a
                 >
               </li>
               <li class="mr-3">
                 <a
-                  class="inline-block text-lg text-black font-bold hover:text-gray-800 border-b-2 border-transparent hover:border-base-orange py-2 px-4"
+                  class="text-robo inline-block text-lg text-black font-bold hover:text-gray-800 border-b-2 border-transparent hover:border-base-orange py-2 px-4"
                   href="#"
-                  >About</a
+                  >Adoptar</a
                 >
               </li>
               <li class="mr-3">
                 <a
-                  class="inline-block text-lg text-black font-bold hover:text-gray-800 border-b-2 border-transparent hover:border-base-orange py-2 px-4"
+                  class="text-robo inline-block text-lg text-black font-bold hover:text-gray-800 border-b-2 border-transparent hover:border-base-orange py-2 px-4"
                   href="#"
-                  >Contact</a
+                  >Ayudar</a
                 >
               </li>
             </ul>
@@ -98,9 +114,9 @@
           <div
             class="text-white ml-8 md:ml-16 px-8 md:px-0 absolute bottom-0 pb-16"
           >
-            <p class="text-6xl">
+            <h2 class="text-6xl text-vollkorn">
               Adoptar
-            </p>
+            </h2>
             <p class="text-2xl">
               La adopción es una alternativa que a la hora de adquirir un animal
               de compañía beneficia a todos: a la familia, a las entidades de
@@ -111,12 +127,14 @@
 
         <div class="ml-8 md:ml-16 pb-10">
           <a
-            class="bg-base-orange hover:bg-plus-orange text-white text-xl tracking-widest font-bold rounded-full cursor-pointer py-4 px-10 inline-block mb-10 md:mb-0"
+            href="#"
+            class="text-robo bg-base-orange hover:bg-mega-orange text-black hover:text-white text-xl tracking-widest font-bold rounded-full cursor-pointer py-4 px-10 inline-block mb-10 md:mb-0"
           >
             ADOPTAR
           </a>
           <a
-            class="bg-base-transparent hover:bg-base-orange text-white text-xl tracking-widest font-bold rounded-full cursor-pointer py-4 px-10 inline-block mb-24 md:ml-8"
+            href="#"
+            class="text-robo bg-sub-orange hover:bg-mega-orange text-black hover:text-white text-xl tracking-widest font-bold rounded-full cursor-pointer py-4 px-10 inline-block mb-24 md:ml-8"
           >
             AYUDAR
           </a>
@@ -128,62 +146,66 @@
 
     <main>
       <div class="text-center pt-20">
-        <p class="text-2xl text-gray-600">SÉ PARTE</p>
-        <h4 class="text-5xl">
+        <p class="text-2xl text-gray-700 text-vollkorn">SÉ PARTE</p>
+        <h2 class="text-robo text-5xl">
           Salva a un animal
-        </h4>
+        </h2>
       </div>
 
-      <div class="lg:flex w-10/12 m-auto pt-12">
-        <div class="md:px-8 mb-10">
-          <h4 class="text-xl font-bold pb-5 tracking-widest">
+      <div class="lg:flex w-10/12 m-auto pt-12 mb-10">
+        <div class="md:px-8 mb-10 flex-1">
+          <h3 class="text-robo text-xl font-bold pb-5 tracking-widest">
             ADOPTAR UNA MASCOTA
-          </h4>
-          <p class="leading-8 text-justify mb-6 text-lg">
-            Los perros que han vivido en protectoras conocen lo que es vivir en
-            la calle y no tener comida. Cuando son adoptados, es tal su
-            gratitud, que se convierte en el amigo más fiel del mundo. El amor
+          </h3>
+          <p class="leading-8 mb-6 text-lg text-justify text-for-read">
+            El animal que ha vivido en protectoras conoce lo que es vivir en la
+            calle y no tener comida. Cuando son adoptados, es tal su gratitud,
+            que se convierten en el amigo más fiel del mundo. El amor
             incondicional será una de las cosas que te enseñará. Él conoce mejor
             que nadie el valor del compromiso y la lealtad. Pase lo que pase,
             siempre tendrá amor que darte.
           </p>
           <a
-            class="bg-base-orange hover:bg-plus-orange text-white text-xl font-bold rounded-full cursor-pointer py-2 px-5 inline-block"
+            href="#"
+            class="text-robo bg-base-orange hover:bg-mega-orange text-black hover:text-white text-xl font-bold rounded-full cursor-pointer py-3 px-8 inline-block"
           >
-            VER MÁS
+            VER LOS ANIMALES
           </a>
         </div>
-        <div class="md:px-8 mb-10">
-          <h4 class="text-xl font-bold pb-5 tracking-widest">
-            HACER UNA DONACIÓN
-          </h4>
-          <p class="leading-8 text-justify mb-6 text-lg">
-            En verano cada año miles de perros son abandonados. Una
-            irresponsabilidad enorme por parte de los dueños que no piensan
-            antes de acoger a un perro en la cantidad de necesidades y
-            atenciones que van a necesitar durante mucho tiempo. Hay que acabar
-            con la tragedia del abandono y para ello es importantísimo la tarea
-            incesante de concienciación y de ayuda a los albergues y refugios.
+        <div class="md:px-8 mb-10 flex-1">
+          <h3 class="text-robo text-xl font-bold pb-5 tracking-widest">
+            DAR VISIÓN A UN REFUGIO
+          </h3>
+          <p class="leading-8 mb-6 text-lg text-justify text-for-read">
+            Hay que acabar con los abandonos y la compra de animales. Para ello
+            es importantísimo la tarea incesante de dar visión a las protectoras
+            y refugios, al igual que a los animales que acogen. Si perteneces a
+            un refugio o protectora, déjanos ser parte de tu equipo, únete a
+            nosotros y consigamos juntos dar una mayor visión a tu lucha por
+            ayudar a los animales.
           </p>
           <a
-            class="bg-base-orange hover:bg-plus-orange text-white text-xl font-bold rounded-full cursor-pointer py-2 px-5 inline-block"
+            href="#"
+            class="text-robo bg-sub-orange hover:bg-mega-orange text-black hover:text-white text-xl font-bold rounded-full cursor-pointer py-3 px-8 inline-block"
           >
-            DONACIÓN
+            UNIRSE AL EQUIPO
           </a>
         </div>
       </div>
 
       <div class="relative back-gradiant pb-64">
-        <div class="md:w-2/4 mx-5 md:mx-20 p-10 rounded-lg bg-white shadow-xl">
-          <h4 class="text-center text-4xl font-bold pt-20">
+        <div
+          class="md:w-2/4 mx-5 md:mx-20 p-10 rounded-lg bg-white shadow-xl text-for-read"
+        >
+          <h2 class="text-robo text-center text-4xl font-bold pt-20">
             Próximos eventos:
-          </h4>
+          </h2>
           <div class="pt-5 flex">
             <div>
               <i class="far fa-calendar fa-lg text-plus-orange"></i>
             </div>
             <div class="ml-5">
-              <h4 class="text-lg font-bold">JUNIO 24 - MERCADILLO SOLIDARIO</h4>
+              <h3 class="text-lg font-bold">JUNIO 24 - MERCADILLO SOLIDARIO</h3>
               <div class="hidden sm:block">
                 El refugio Fighters organiza este miércoles 24 de junio un
                 Mercadillo Solidario. El mercadillo estará situado en la
@@ -199,7 +221,7 @@
               <i class="far fa-calendar fa-lg text-plus-orange"></i>
             </div>
             <div class="ml-5">
-              <h4 class="text-lg font-bold">JUNIO 24 - MERCADILLO SOLIDARIO</h4>
+              <h3 class="text-lg font-bold">JUNIO 24 - MERCADILLO SOLIDARIO</h3>
               <div class="hidden sm:block">
                 El refugio Fighters organiza este miércoles 24 de junio un
                 Mercadillo Solidario. El mercadillo estará situado en la
@@ -215,7 +237,7 @@
               <i class="far fa-calendar fa-lg text-plus-orange"></i>
             </div>
             <div class="ml-5">
-              <h4 class="text-lg font-bold">JUNIO 24 - MERCADILLO SOLIDARIO</h4>
+              <h3 class="text-lg font-bold">JUNIO 24 - MERCADILLO SOLIDARIO</h3>
               <div class="hidden sm:block">
                 El refugio Fighters organiza este miércoles 24 de junio un
                 Mercadillo Solidario. El mercadillo estará situado en la
@@ -231,7 +253,7 @@
               <i class="far fa-calendar fa-lg text-plus-orange"></i>
             </div>
             <div class="ml-5">
-              <h4 class="text-lg font-bold">JUNIO 24 - MERCADILLO SOLIDARIO</h4>
+              <h3 class="text-lg font-bold">JUNIO 24 - MERCADILLO SOLIDARIO</h3>
               <div class="hidden sm:block">
                 El refugio Fighters organiza este miércoles 24 de junio un
                 Mercadillo Solidario. El mercadillo estará situado en la
@@ -249,8 +271,10 @@
 
       <div class="bg-base-black py-32">
         <div class="text-center">
-          <p class="text-xl text-gray-500">OBJETIVOS</p>
-          <h4 class="text-center text-4xl text-white">¿Que hace PawsVision?</h4>
+          <p class="text-vollkorn text-xl text-gray-400">OBJETIVOS</p>
+          <h2 class="text-robo text-center text-4xl text-white">
+            ¿Que hace PawsVision?
+          </h2>
         </div>
 
         <div class="md:flex w-10/12 m-auto text-center">
@@ -258,10 +282,10 @@
             <p class="py-5">
               <i class="fas text-plus-orange fa-home text-6xl"></i>
             </p>
-            <h4 class="text-2xl text-white font-bold">
+            <h3 class="text-robo text-2xl text-white font-bold">
               Encontrar un hogar
-            </h4>
-            <p class="leading-8 text-white">
+            </h3>
+            <p class="leading-8 text-white text-for-read text-lg">
               Incrementar las oportunidades de éxito a la hora de encontrar un
               nuevo hogar a los animales que viven en los refugios de la
               plataforma.
@@ -271,13 +295,13 @@
             <p class="py-5">
               <i class="fas text-plus-orange fa-search text-6xl"></i>
             </p>
-            <h4 class="text-2xl text-white font-bold">
+            <h3 class="text-robo text-2xl text-white font-bold">
               Rescate de animales
-            </h4>
-            <p class="leading-8 text-white">
+            </h3>
+            <p class="leading-8 text-white text-for-read text-lg">
               Una rápida difusión cuando desaparece una mascota es clave para
-              poder encontrarla. Altavoz para animales desaparecidos como
-              encontrados.
+              poder encontrarla. Altavoz para animales desaparecidos como para
+              aquellos encontrados.
             </p>
           </div>
         </div>
@@ -286,10 +310,10 @@
             <p class="py-5">
               <i class="fas text-plus-orange fa-project-diagram text-6xl"></i>
             </p>
-            <h4 class="text-2xl text-white font-bold">
+            <h3 class="text-robo text-2xl text-white font-bold">
               Difusión de eventos
-            </h4>
-            <p class="leading-8 text-white">
+            </h3>
+            <p class="leading-8 text-white text-for-read text-lg">
               Los refugios muchas veces necesitan voluntarios, simplemente por
               un día, para ayudar en las labores de acondicionamiento de los
               refugios o para asistir a algún evento
@@ -299,10 +323,10 @@
             <p class="py-5">
               <i class="fas text-plus-orange fa-chart-line text-6xl"></i>
             </p>
-            <h4 class="text-2xl text-white font-bold">
+            <h3 class="text-robo text-2xl text-white font-bold">
               Ayudas económicas a los refugios
-            </h4>
-            <p class="leading-8 text-white">
+            </h3>
+            <p class="leading-8 text-white text-for-read text-lg">
               Desde la plataforma, de forma completamente benéfica, se gestionan
               donaciones, apadrinamientos de animales y ayudas para la
               alimentación y la sanidad de los animales de los refugios
@@ -313,12 +337,13 @@
 
       <div class="midle-back justify-center hidden sm:flex">
         <div
-          class="w-4/5 rounded-lg shadow-xl bg-base-orange text-white text-center py-32"
+          class="w-4/5 rounded-lg shadow-xl bg-mega-orange text-white text-center py-32"
         >
-          <p class="text-xl text-gray-400">QUE NOS IMPULSA</p>
-          <h4 class="text-center text-5xl text-white">Nuestra misión</h4>
+          <h2 class="text-robo text-center text-5xl text-white">
+            Nuestra misión
+          </h2>
 
-          <div class="text-xl py-5 px-16">
+          <div class="text-xl py-5 px-16 text-for-read">
             Rescatar animales en situación de desamparo, maltrato y/o abandono,
             albergarlos en refugios en las mejores condiciones y durante el
             tiempo que sea necesario hasta encontrar para ellos un hogar
@@ -332,10 +357,15 @@
       </div>
 
       <div class="w-full relative py-32">
-        <h4 class="text-6xl text-center pt-16">Animales</h4>
+        <div class="text-center">
+          <p class="text-xl text-gray-700 text-vollkorn">QUE NOS IMPULSA</p>
+          <h2 class="text-robo text-5xl text-center">
+            Animales ayudados
+          </h2>
+        </div>
 
         <div
-          class="flex flex-col items-center align-middle justify-center md:flex-row mb-12"
+          class="flex flex-col items-center justify-center lg:flex-row mb-12"
         >
           <div
             class="max-w-sm md:max-w-xs rounded overflow-hidden shadow-lg mx-10 my-10"
@@ -346,8 +376,8 @@
               alt="Gato adoptado"
             />
             <div class="px-6 py-4">
-              <div class="font-bold text-xl mb-2">Moira</div>
-              <p class="text-gray-700 text-base">
+              <div class="text-robo font-bold text-xl mb-2">Moira</div>
+              <p class="text-gray-700 text-for-read text-base text-justify">
                 Moira fue la pequeña de una camada de la que no se podían hacer
                 cargo. Gracias a PawsVision ella y sus hermanos tuvieron la
                 oportunidad de encontrar nuevos hogares donde viven con sus
@@ -359,18 +389,23 @@
           <div
             class="max-w-sm md:max-w-xs rounded overflow-hidden shadow-lg mx-10 my-10"
           >
-            <img
-              class="w-full rounded"
-              src="./assets/dog-01.webp"
-              alt="Perro adoptado"
-            />
+            <picture>
+              <source type="image/webp" srcset="./assets/dog-01.webp" />
+              <img
+                class="w-full rounded"
+                src="./assets/dog-01.jpg"
+                alt="Perro adoptado"
+              />
+            </picture>
+
             <div class="px-6 py-4">
-              <div class="font-bold text-xl mb-2">Laika</div>
-              <p class="text-gray-700 text-base">
-                La valiente de Laika fue rescatada por un refugio al cual se le
-                ayudó mediante donaciones para costear sus tratamientos. A día
-                de hoy Laika se encuentra bien y vive feliz con su nueva familia
-                la cual la conoció a través de la plataforma.
+              <div class="text-robo font-bold text-xl mb-2">Laika</div>
+              <p class="text-gray-700 text-for-read text-base text-justify">
+                Esta preciosa de mirada encantandora es Laika. Ella fue
+                rescatada por un refugio al cual se le ayudó mediante donaciones
+                para costear sus tratamientos. A día de hoy, Laika se encuentra
+                en buen estado de salud y vive feliz con una familia, la cual la
+                conoció a través de la plataforma.
               </p>
             </div>
           </div>
@@ -384,8 +419,8 @@
               alt="Gato rescatado"
             />
             <div class="px-6 py-4">
-              <div class="font-bold text-xl mb-2">Covid</div>
-              <p class="text-gray-700 text-base">
+              <div class="text-robo font-bold text-xl mb-2">Covid</div>
+              <p class="text-gray-700 text-for-read text-base text-justify">
                 Covid fue encontrado en plena pandemia cerca de un hospital.
                 Gracias a la plataforma fue cuidado por un refugio donde fue
                 adoptado por una camada y al poco tiempo encontró una nueva
@@ -395,20 +430,21 @@
           </div>
         </div>
 
-        <div
-          class="flex flex-col items-center align-middle justify-center md:flex-row"
-        >
+        <div class="flex flex-col items-center justify-center lg:flex-row">
           <div
             class="max-w-sm md:max-w-xs rounded overflow-hidden shadow-lg mx-10 my-10"
           >
-            <img
-              class="w-full rounded"
-              src="./assets/dog-02.webp"
-              alt="Perro apadrinado"
-            />
+            <picture>
+              <source type="image/webp" srcset="./assets/dog-02.webp" />
+              <img
+                class="w-full rounded"
+                src="./assets/dog-02.jpg"
+                alt="Perro adoptado"
+              />
+            </picture>
             <div class="px-6 py-4">
-              <div class="font-bold text-xl mb-2">Canelo</div>
-              <p class="text-gray-700 text-base">
+              <div class="text-robo font-bold text-xl mb-2">Canelo</div>
+              <p class="text-gray-700 text-for-read text-base text-justify">
                 Canelo es todo un influencer que fue rescatado por un refugio,
                 el cual por motivos de salud se convirtió en su hogar. A día de
                 hoy y gracias a la gente que lo apadrinó vive feliz en el
@@ -426,8 +462,8 @@
               alt="Gato rescatado"
             />
             <div class="px-6 py-4">
-              <div class="font-bold text-xl mb-2">Isidoro</div>
-              <p class="text-gray-700 text-base">
+              <div class="text-robo font-bold text-xl mb-2">Isidoro</div>
+              <p class="text-gray-700 text-for-read text-base text-justify">
                 Isidoro fue rescatado por un chofer de autobús al encontrarlo en
                 pésimas condiciones. Con la ayuda de las donaciones en la
                 plataforma se pudo pagar sus tratamientos y a día de hoy vive
@@ -439,18 +475,23 @@
           <div
             class="max-w-sm md:max-w-xs rounded overflow-hidden shadow-lg mx-10 my-10"
           >
-            <img
-              class="w-full rounded"
-              src="./assets/dog-03.webp"
-              alt="Perros adoptados"
-            />
+            <picture>
+              <source type="image/webp" srcset="./assets/dog-03.webp" />
+              <img
+                class="w-full rounded"
+                src="./assets/dog-03.jpg"
+                alt="Perros adoptados"
+              />
+            </picture>
             <div class="px-6 py-4">
-              <div class="font-bold text-xl mb-2">Galleta y Bruma</div>
-              <p class="text-gray-700 text-base">
+              <div class="text-robo font-bold text-xl mb-2">
+                Galleta y Bruma
+              </div>
+              <p class="text-gray-700 text-for-read text-base text-justify">
                 Galleta fue encontrada abandonada cerca del refugio donde vivía
                 Bruma. Desde entonces ambas han sido inseparables y esta era una
                 condición importante para su adopción. Gracias a la difusión de
-                la PawsVision ambas encontraron un hogar juntas.
+                PawsVision ambas encontraron un hogar juntas.
               </p>
             </div>
           </div>
@@ -461,46 +502,62 @@
 
       <div class="back-foot pb-20">
         <div class="py-20 flex flex-col items-center">
-          <h4 class="text-5xl text-white text-center">
+          <h2 class="text-robo text-5xl text-white text-center">
             ¿Quieres involucrarte?
-          </h4>
-          <form class="w-full flex flex-col items-center" action="#">
+          </h2>
+          <form id="contact-form" class="w-full flex flex-col items-center">
             <input
               id="email"
               aria-label="email"
-              class="mt-10 bg-base-transparent text-white text-center placeholder-white w-5/12 rounded-full py-4 focus:outline-none focus:bg-white focus:placeholder-black focus:text-black"
+              class="text-robo mt-10 bg-base-gray text-white text-center placeholder-white w-5/12 rounded-full py-4 focus:outline-none focus:bg-white focus:placeholder-black focus:text-black text-xl"
               placeholder="Email"
+              name="user_email"
               type="email"
             />
-
-            <button
-              class="mt-5 mt-10 bg-base-orange hover:bg-plus-orange text-center text-white w-5/12 rounded-full py-4"
-            >
-              Enviar
-            </button>
+            <div
+              class="mt-5 g-recaptcha"
+              data-sitekey="6LcwyfkUAAAAAJzeZj5aDTJ0bG2elUAQhMkR8MhK"
+            ></div>
+            <input
+              type="submit"
+              class="text-robo mt-5 mt-10 bg-mega-orange hover:bg-plus-orange text-center text-white w-5/12 rounded-full py-4 text-xl"
+              value="Enviar"
+            />
           </form>
         </div>
         <div class="flex justify-center mt-16">
-          <a
-            class="text-white bg-base-transparent rounded-full h-20 w-20 flex items-center justify-center cursor-pointer mx-5 hover:bg-base-orange hover:text-base-transparent"
-          >
-            <i class="fab fa-2x fa-facebook-f"></i>
-          </a>
-          <a
-            class="text-white bg-base-transparent rounded-full h-20 w-20 flex items-center justify-center cursor-pointer mx-5 hover:bg-base-orange hover:text-base-transparent"
-          >
-            <i class="fab fa-2x fa-twitter"></i>
-          </a>
-          <a
-            class="text-white bg-base-transparent rounded-full h-20 w-20 flex items-center justify-center cursor-pointer mx-5 hover:bg-base-orange hover:text-base-transparent"
-          >
-            <i class="fab fa-2x fa-instagram"></i>
-          </a>
-          <a
-            class="text-white bg-base-transparent rounded-full h-20 w-20 flex items-center justify-center cursor-pointer mx-5 hover:bg-base-orange hover:text-base-transparent"
-          >
-            <i class="fab fa-2x fa-youtube"></i>
-          </a>
+          <div class="sm:inline-flex">
+            <a
+              href="https://www.facebook.com/"
+              aria-label="Visita nuestra página de facebook"
+              class="my-5 text-white bg-base-transparent rounded-full p-10 h-20 w-20 flex items-center justify-center cursor-pointer mx-5 hover:bg-base-orange"
+            >
+              <i class="fab fa-2x fa-facebook-f"></i>
+            </a>
+            <a
+              href="https://www.twitter.com/"
+              aria-label="Visita nuestro perfil de twitter"
+              class="my-5 text-white bg-base-transparent rounded-full p-10 h-20 w-20 flex items-center justify-center cursor-pointer mx-5 hover:bg-base-orange"
+            >
+              <i class="fab fa-2x fa-twitter"></i>
+            </a>
+          </div>
+          <div class="sm:inline-flex">
+            <a
+              href="https://instagram.com/"
+              aria-label="Visita nuestro perfil de instagram"
+              class="my-5 text-white bg-base-transparent rounded-full p-10 h-20 w-20 flex items-center justify-center cursor-pointer mx-5 hover:bg-base-orange"
+            >
+              <i class="fab fa-2x fa-instagram"></i>
+            </a>
+            <a
+              href="https://www.youtube.com/"
+              aria-label="Visita nuestro canal de youtube"
+              class="my-5 text-white bg-base-transparent rounded-full p-10 h-20 w-20 flex items-center justify-center cursor-pointer mx-5 hover:bg-base-orange"
+            >
+              <i class="fab fa-2x fa-youtube"></i>
+            </a>
+          </div>
         </div>
       </div>
     </main>
